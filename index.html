@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>Pulse · 经营数据看板</title><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script></head>
+<body>
+<header class="topbar"><a class="brand" href="#main"><span class="brand-mark" aria-hidden="true">P</span>Pulse <span class="brand-sub">经营工作台</span></a><button id="theme-toggle" type="button" aria-pressed="false">切换深色</button></header>
+<main id="main">
+<div class="page-heading"><div><p class="eyebrow">BUSINESS OVERVIEW / 经营概览</p><h1>每一份增长，都清晰可见<span>.</span></h1><p class="subtitle">用数据理解业务，让下一步更有把握。</p></div><span class="status"><i></i>演示数据</span></div>
+<section class="toolbar" aria-label="数据筛选"><div class="periods" role="group" aria-label="统计周期"><button type="button" data-period="week" aria-pressed="false">近 7 天</button><button type="button" data-period="month" aria-pressed="true">近 30 天</button><button type="button" data-period="quarter" aria-pressed="false">近 90 天</button></div><span id="updated" role="status">数据已就绪</span></section>
+<section id="metrics" class="metrics" aria-label="核心指标"></section>
+<div class="details"><section class="panel trend"><div class="panel-heading"><div><p class="eyebrow">REVENUE TREND</p><h2>收入走势</h2></div><span class="legend"><i></i>营业收入</span></div><div id="chart" class="chart"></div><p class="chart-note">金额单位：万元 · 各周期展示 6 个等距区间</p></section>
+<section class="panel channels"><div class="panel-heading"><div><p class="eyebrow">CHANNEL MIX</p><h2>收入来源</h2></div><span class="badge">渠道</span></div><div id="channels"></div><p class="insight">增长提示<br><strong>自然搜索是本期收入的主要来源。</strong></p></section></div>
+<footer>Pulse 数据看板 <span>HTML / CSS / JavaScript · 本地演示</span></footer>
+</main></body></html>
